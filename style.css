@@ -1,2 +1,183 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'outfit';
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'young';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+*{
+    margin: 0px;
+}
+
+:root{
+    /* fonts */
+    --General_font: 'outfit', Arial, Helvetica, sans-serif;
+    --Titles_font: 'young', 'Times New Roman', Times, serif;
+
+    /* colors */
+    --wwhite: hsl(0, 0%, 100%);
+
+    --Stone_100: hsl(30, 54%, 90%);
+    --Stone_150: hsl(30, 18%, 87%);
+    --Stone_600: hsl(30, 10%, 34%);
+    --Stone_900: hsl(24, 5%, 18%);
+
+    --Brown_800: hsl(14, 45%, 36%);
+
+    --Rose_800: hsl(332, 51%, 32%);
+    --Rose_50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--Rose_50)
+}
+main{
+    background-color: var(--wwhite);
+    min-width: 370px;
+    max-width: 800px;
+    margin: 5% auto;
+    border-radius: 25px;
+    padding-top: 40px;
+}
+
+main > img{
+    display: block;
+    width: 90%;
+    margin: 0px auto 30px auto;
+    border-radius: 25px;
+}
+
+.wrapper{
+    text-align: left;
+    padding: 0px 40px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 2em;
+}
+
+.wrapper h1{
+    font-family: var(--Titles_font);
+    color: var(--Stone_900);
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1.2em;
+    
+}
+
+.wrapper p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    font-family: var(--General_font), Arial, Helvetica, sans-serif;
+    color: var(--Stone_900);
+}
+
+aside{
+
+    font-size: 1em;
+    line-height: 2em;
+    background-color: var(--Rose_50);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+
+}
+.aside_title{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--Rose_800)
+}
+.wrapper ul{
+    padding-left: 30px;
+    list-style: square;
+}
+
+.wrapper li::marker{
+    color: var(--Brown_800);
+}
+
+.wrapper h2{
+    font-family: var(--Titles_font);
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--Brown_800);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.Ingredients{
+    padding:40px 0px;
+    border-bottom: 1px solid var(--Stone_150) ;
+}
+
+.Ingredients ul{
+    padding-left: 25px;
+}
+
+.Instructions {
+    padding: 40px 0px;
+    border-bottom: 1px solid var(--Stone_150);
+}
+.Instructions ol{
+    padding: 0px 0px 0px 25px;
+}
+.Instructions li{
+    padding-left: 20px;
+}
+.Instructions li::marker{
+    font-weight: bold;
+    
+}
+
+.Nutrition{
+    padding: 40px 0px;
+}
+
+.Nutrition table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.Nutrition tr{
+    text-indent: 1.5em;
+    
+}
+
+.Bottom{
+    border-bottom: 1px solid var(--Stone_150);
+}
+.Nutrition th{
+    font-weight: 400;
+    padding: 20px 0px;
+}
+
+.Nutrition td{
+    font-weight: bold;
+    color: var(--Brown_800);
+    padding: 20px 0px;
+}
+
+
+.attribution {
+     font-size: 11px; text-align: center; 
+     font-weight: bold;
+    background-color: rgb(244, 145, 162);
+    color: var(--Rose_50);
+    padding: 10px;
+}
+
+.attribution a {
+     color: var(--Rose_800);
+    text-decoration: none;
+    }
+
+.attribution a:hover{
+    text-decoration: underline;
+}
